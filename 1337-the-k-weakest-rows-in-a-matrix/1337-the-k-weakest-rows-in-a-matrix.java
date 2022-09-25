@@ -1,6 +1,6 @@
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
-        PriorityQueue<Pair> pq = new PriorityQueue<>();
+        PriorityQueue<Pair> pq = new PriorityQueue<>();//isme Collections.reverseOrder() nahi likhenge but ye decresing order mai hi hoga kyuki hamlog compare to function overrive kiye hua h pair class mai
         for(int i = 0; i < mat.length; i ++) {
             int power = getPower(mat[i]);
             Pair pairKaObj = new Pair(power, i);

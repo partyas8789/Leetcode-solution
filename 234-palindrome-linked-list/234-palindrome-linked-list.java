@@ -9,15 +9,6 @@
  * }
  */
 class Solution {
-    // public int size(ListNode head){
-    //     ListNode temp = head;
-    //     int count = 0;
-    //     while(temp != null){
-    //         temp = temp.next;
-    //         count++;
-    //     }
-    //     return count;
-    // }
     public boolean isPalindrome(ListNode head) {
         ListNode dummy = new ListNode(-1);
         ListNode temp2 = dummy;
@@ -30,12 +21,7 @@ class Solution {
         }
         dummy = dummy.next;
         ListNode head1=reverseList(dummy);
-        // while(head1 != null){
-        //     System.out.println(head1.val);
-        //     head1 = head1.next;
-        // }
         while(head!=null){
-            // System.out.print(head.val +" "+head1.val);
             if(head.val!=head1.val) return false;
             head=head.next;
             head1=head1.next;

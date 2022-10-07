@@ -20,8 +20,7 @@ class Solution {
                 }
                 hm.put(num,hs);
             }
-        }System.out.println(hm);
-        System.out.print(hs1);
+        }
         return hs1.size();
     }
 }
